@@ -32,7 +32,7 @@ public class BoardService {
 		return boardDAO.selectBoardDetail(no);
 	}
 
-	/* 사내게시판 입력 */ 
+	/* 사내게시판  */ 
 	@Transactional
 	public void insertBoard(BoardDTO board) {
 		boardDAO.insertBoard(board);
@@ -50,7 +50,7 @@ public class BoardService {
 		return boardDAO.selectNoticeDetail(no);
 	}
 	
-	/* 공지사항 입력 */
+	/* 공지사항 신규 */
 	@Transactional
 	public void insertNotice(BoardDTO notice) {
 		boardDAO.insertNotice(notice);
